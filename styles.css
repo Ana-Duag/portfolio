@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-/* NAVBAR STICKY */
+/* NAVBAR */
 .navbar {
     position: fixed;
     top: 0;
@@ -23,21 +23,24 @@ body {
     margin: 0 auto;
     padding: 10px 20px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .nav-links a {
     color: white;
-    margin: 0 20px;
+    margin: 0 16px;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
 }
 
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
 /* HERO */
 .hero {
-    height: 90vh;
+    height: 88vh;
     background-image: url("https://raw.githubusercontent.com/Ana-Duag/portfolio/main/fondo4.jpeg");
     background-size: cover;
     background-position: center top;
@@ -46,6 +49,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 20px;
+    margin-top: 60px; /* evita tapar hero con navbar en móvil */
 }
 
 .hero-overlay {
@@ -63,35 +68,31 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 48px;   /* MÁS PEQUEÑO */
-    margin: 0 0 15px;
+    font-size: 42px;
+    margin-bottom: 15px;
     font-weight: 700;
 }
 
 .hero-content h2 {
-    font-size: 24px;   /* también reducido */
-    margin: 0 0 30px;
-    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 25px;
 }
 
-.hero-actions {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* BOTÓN */
 .btn-primary {
-    padding: 14px 32px;
+    padding: 12px 26px;
     border-radius: 999px;
     background: #f8f9fb;
     color: #0A3C5F;
     text-decoration: none;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-/* SECCIONES GENERALES */
+.btn-primary:hover {
+    background: #e1e4ee;
+}
+
+/* SECCIONES */
 .section {
     max-width: 900px;
     margin: 80px auto;
@@ -101,6 +102,7 @@ body {
 .section h2 {
     font-size: 30px;
     margin-bottom: 18px;
+    color: #0A3C5F;
 }
 
 /* PROYECTOS */
@@ -111,11 +113,11 @@ body {
 }
 
 .project-card {
-    border: 1px solid #e0e0e0;
-    padding: 18px 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
     border-radius: 12px;
     background: white;
-    transition: transform 0.15s, box-shadow 0.15s;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .project-card:hover {
@@ -123,22 +125,70 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* FOOTER */
-.footer {
-    border-top: 1px solid #e0e0e0;
-    padding: 20px;
-    text-align: center;
+.project-card h3 {
+    color: #0A3C5F;
+    margin-bottom: 10px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 38px;
+.project-card p {
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.project-card a {
+    color: #0A3C5F;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* CONTACTO */
+#contacto p a {
+    font-weight: 600;
+}
+
+/* FOOTER */
+.footer {
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 600px) {
+
+    .nav-links a {
+        margin: 0 10px;
+        font-size: 14px;
     }
+
+    .hero {
+        height: 75vh;
+        padding: 0 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
     .hero-content h2 {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 10px 22px;
+    }
+
+    .section {
+        margin: 60px auto;
+    }
+
+    .project-card {
+        padding: 16px;
     }
 }
+
 
 
 
