@@ -27,9 +27,34 @@ nav a:hover {
 }
 
 /* HERO */
-.hero img {
+.hero {
     width: 100%;
-    display: block;
+    height: 450px;
+    background-image: url("https://raw.githubusercontent.com/Ana-Duag/Ana-Duag/main/51f9f641-af05-47c7-845e-76c9e9024285.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay {
+    text-align: center;
+    color: white;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+.hero-overlay h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero-overlay h2 {
+    font-size: 24px;
+    margin: 10px 0 0;
+    font-weight: 300;
 }
 
 /* SECCIONES */
@@ -71,3 +96,4 @@ nav a:hover {
 .project-card a:hover {
     text-decoration: underline;
 }
+
