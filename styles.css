@@ -26,9 +26,13 @@ body {
     justify-content: center;
 }
 
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
 .nav-links a {
     color: white;
-    margin: 0 16px;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -50,7 +54,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    margin-top: 60px; /* evita tapar hero con navbar en móvil */
+    margin-top: 60px;
 }
 
 .hero-overlay {
@@ -76,6 +80,7 @@ body {
 .hero-content h2 {
     font-size: 22px;
     margin-bottom: 25px;
+    font-weight: 300;
 }
 
 .btn-primary {
@@ -154,17 +159,28 @@ body {
     font-size: 14px;
 }
 
-/* RESPONSIVE MOBILE */
+/* -------------------------------------------- */
+/* RESPONSIVE – AJUSTE PARA QUE NO SALTE CONTACTO EN MÓVIL */
+/* -------------------------------------------- */
+
 @media (max-width: 600px) {
 
-    .nav-links a {
-        margin: 0 10px;
-        font-size: 14px;
+    /* Ajuste menú móvil */
+    .nav-links {
+        gap: 10px;
+        white-space: nowrap; /* evita salto a segunda línea */
     }
 
+    .nav-links a {
+        font-size: 13px;
+        margin: 0 6px;
+    }
+
+    /* HERO móvil */
     .hero {
         height: 75vh;
         padding: 0 12px;
+        margin-top: 55px;
     }
 
     .hero-content h1 {
@@ -180,14 +196,26 @@ body {
         padding: 10px 22px;
     }
 
+    /* Secciones */
     .section {
         margin: 60px auto;
     }
 
+    /* Proyectos */
     .project-card {
         padding: 16px;
     }
 }
+
+/* Extra para móviles MUY pequeños */
+@media (max-width: 450px) {
+
+    .nav-links a {
+        font-size: 12px;
+        margin: 0 4px;
+    }
+}
+
 
 
 
