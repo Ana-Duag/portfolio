@@ -24,7 +24,7 @@ body {
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: center; /* centramos el menú al eliminar AD */
+    justify-content: center;
 }
 
 .nav-links a {
@@ -63,13 +63,13 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 62px; /* REDUCIDO */
+    font-size: 48px;   /* MÁS PEQUEÑO */
     margin: 0 0 15px;
     font-weight: 700;
 }
 
 .hero-content h2 {
-    font-size: 30px; /* un poco más pequeño */
+    font-size: 24px;   /* también reducido */
     margin: 0 0 30px;
     font-weight: 300;
 }
@@ -91,7 +91,7 @@ body {
     font-size: 18px;
 }
 
-/* SECCIONES */
+/* SECCIONES GENERALES */
 .section {
     max-width: 900px;
     margin: 80px auto;
@@ -133,12 +133,13 @@ body {
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 48px;
+        font-size: 38px;
     }
     .hero-content h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
+
 
 
 
