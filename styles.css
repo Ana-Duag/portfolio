@@ -159,16 +159,11 @@ body {
     font-size: 14px;
 }
 
-/* -------------------------------------------- */
-/* RESPONSIVE – AJUSTE PARA QUE NO SALTE CONTACTO EN MÓVIL */
-/* -------------------------------------------- */
-
+/* RESPONSIVE */
 @media (max-width: 600px) {
-
-    /* Ajuste menú móvil */
     .nav-links {
         gap: 10px;
-        white-space: nowrap; /* evita salto a segunda línea */
+        white-space: nowrap;
     }
 
     .nav-links a {
@@ -176,7 +171,6 @@ body {
         margin: 0 6px;
     }
 
-    /* HERO móvil */
     .hero {
         height: 75vh;
         padding: 0 12px;
@@ -196,26 +190,51 @@ body {
         padding: 10px 22px;
     }
 
-    /* Secciones */
     .section {
         margin: 60px auto;
     }
 
-    /* Proyectos */
     .project-card {
         padding: 16px;
     }
 }
 
-/* Extra para móviles MUY pequeños */
 @media (max-width: 450px) {
-
     .nav-links a {
         font-size: 12px;
         margin: 0 4px;
     }
 }
 
+/* -------------------------------------------- */
+/* NUEVOS AJUSTES – PERFIL Y PROYECTOS          */
+/* -------------------------------------------- */
+
+/* Perfil centrado */
+#perfil p {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 1.2rem auto;
+    line-height: 1.6;
+}
+
+/* Descripciones de proyectos centradas */
+.project-card p {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto 14px auto;
+    line-height: 1.5;
+}
+
+/* Si activas la intro de Proyectos */
+.proyectos-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    line-height: 1.55;
+    font-size: 17px;
+    color: #444;
+}
 
 
 
