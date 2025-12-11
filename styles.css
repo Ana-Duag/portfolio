@@ -138,103 +138,11 @@ body {
 .project-card p {
     margin-bottom: 14px;
     line-height: 1.5;
-}
 
-.project-card a {
-    color: #0A3C5F;
-    font-weight: 600;
-    text-decoration: none;
-}
+    /* ✔ JUSTIFICADO */
+    text-align: justify;
+    max-width: 90
 
-/* CONTACTO */
-#contacto p a {
-    font-weight: 600;
-}
-
-/* FOOTER */
-.footer {
-    border-top: 1px solid #ddd;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-    .nav-links {
-        gap: 10px;
-        white-space: nowrap;
-    }
-
-    .nav-links a {
-        font-size: 13px;
-        margin: 0 6px;
-    }
-
-    .hero {
-        height: 75vh;
-        padding: 0 12px;
-        margin-top: 55px;
-    }
-
-    .hero-content h1 {
-        font-size: 34px;
-    }
-
-    .hero-content h2 {
-        font-size: 18px;
-    }
-
-    .btn-primary {
-        font-size: 14px;
-        padding: 10px 22px;
-    }
-
-    .section {
-        margin: 60px auto;
-    }
-
-    .project-card {
-        padding: 16px;
-    }
-}
-
-@media (max-width: 450px) {
-    .nav-links a {
-        font-size: 12px;
-        margin: 0 4px;
-    }
-}
-
-/* -------------------------------------------- */
-/* NUEVOS AJUSTES – PERFIL Y PROYECTOS          */
-/* -------------------------------------------- */
-
-/* Perfil centrado */
-#perfil p {
-    text-align: center;
-    max-width: 720px;
-    margin: 0 auto 1.2rem auto;
-    line-height: 1.6;
-}
-
-/* Descripciones de proyectos centradas */
-.project-card p {
-    text-align: center;
-    max-width: 90%;
-    margin: 0 auto 14px auto;
-    line-height: 1.5;
-}
-
-/* Si activas la intro de Proyectos */
-.proyectos-intro {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 25px auto;
-    line-height: 1.55;
-    font-size: 17px;
-    color: #444;
-}
 
 
 
