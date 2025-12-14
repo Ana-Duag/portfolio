@@ -138,6 +138,7 @@ body {
 .project-card p {
     margin-bottom: 14px;
     line-height: 1.5;
+    text-align: left; /* ✅ NO justificado */
 }
 
 .project-card a {
@@ -208,23 +209,14 @@ body {
 }
 
 /* ========================================================= */
-/* 🔥 AJUSTE FINAL – JUSTIFICAR TEXTO EN PERFIL Y PROYECTOS */
+/* PERFIL – SE MANTIENE JUSTIFICADO */
 /* ========================================================= */
 
-/* PERFIL */
 #perfil p {
     text-align: justify !important;
     max-width: 720px;
     margin: 0 auto 1.2rem auto;
     line-height: 1.6;
-}
-
-/* PROYECTOS */
-.projects-container .project-card p {
-    text-align: justify !important;
-    max-width: 90%;
-    margin: 0 auto 14px auto;
-    line-height: 1.5;
 }
 
 /* INTRODUCTORIO (si lo usas) */
@@ -236,6 +228,7 @@ body {
     font-size: 17px;
     color: #444;
 }
+
 
 
 
