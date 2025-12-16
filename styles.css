@@ -229,6 +229,59 @@ body {
     color: #444;
 }
 
+/* ========================================================= */
+/* TECH STACK */
+/* ========================================================= */
+
+#tech-stack {
+    margin-top: 80px;
+}
+
+.tech-stack-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+}
+
+.tech-category {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px 22px;
+    background: #ffffff;
+}
+
+.tech-category h3 {
+    color: #0A3C5F;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.tech-category ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.tech-category li {
+    margin-bottom: 8px;
+    line-height: 1.45;
+    font-size: 15px;
+}
+
+/* Responsive Tech Stack */
+@media (max-width: 600px) {
+    .tech-category {
+        padding: 16px 18px;
+    }
+
+    .tech-category h3 {
+        font-size: 17px;
+    }
+
+    .tech-category li {
+        font-size: 14px;
+    }
+}
+
 
 
 
